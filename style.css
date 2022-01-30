@@ -1,0 +1,292 @@
+:root {
+  --body-bg-color: #22212c;
+  --text-color: #837e9f;
+  --bg-cards: #302f3d;
+  --bg-techs: #cb92b1;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Merriweather Sans;
+}
+
+body {
+  background-color: var(--body-bg-color);
+}
+
+.main-thing {
+  display: flex;
+  flex-direction: row;
+  justify-self: space-around;
+}
+
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 348px;
+  height: 292px;
+  left: 40px;
+  top: 40px;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 450px;
+  top: 41px;
+  width: 952px;
+  height: 292px;
+  color: var(--text-color);
+
+}
+
+.my-projects {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 1000px;
+  height: 86px;
+  padding:1rem;
+}
+
+.my-projects h2 {
+  margin-right: 35rem;
+}
+
+span {
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+}
+
+.project-post{
+  margin-top:1rem;
+  padding:2rem;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 450px;
+  height: 186px;
+}
+
+.project-post img{
+  padding-right: 1rem;
+}
+
+.dot {
+  background-color: yellow;
+  width: 1rem;
+  border-radius: 50%;
+}
+
+
+#profile-name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 12rem;
+}
+
+#name-profile {
+  color: var(--text-color);
+  align-items: center;
+  size: 1.43rem;
+  line-height: 1.8rem;
+  padding-bottom: 0.7rem;
+}
+
+#job-profile {
+  color: var(--text-color);
+  font-weight: 300;
+  font-style: normal;
+  size: 0.81rem;
+  line-height: 1.02rem;
+}
+
+#image-profile {
+  position: absolute;
+  width: 128px;
+  height: 128px;
+  left: 7rem;
+  top: 1rem;
+  border: 2px solid #00ff00;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0.2rem;
+}
+
+#image-profile :hover {
+  cursor: pointer;
+  border: 3px double #00ff00;
+  margin: 1rem;
+}
+
+#whatsapp {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 348px;
+  height: 292px;
+  left: 2.5rem;
+  top: 22rem;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  cursor: pointer;
+  align-items: border;
+  align-items: last-baseline;
+}
+
+#links-list {
+  display: inline;
+  overflow: hidden;
+  vertical-align: top;
+
+  padding: 2rem;
+
+  color: var(--text-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 0.75rem;
+  line-height: 1.945rem;
+}
+
+#links-list a {
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+
+}
+
+#links-list span {
+  float: center;
+  padding-left: 1.125rem;
+  padding-top: 1rem;
+  left: 124px;
+  top: 100rem;
+}
+
+.tec {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 348px;
+  height: 208px;
+  left: 40px;
+  top: 660px;
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+
+.tec-name,
+.exp-name,
+.edu-name {
+  display: inline;
+  overflow: hidden;
+  vertical-align: top;
+  padding: 1rem;
+  color: var(--text-color);
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.55rem;
+  line-height: 1.945rem;
+}
+
+.tec-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 1rem;
+  justify-content: center;
+  gap: 8px;
+}
+
+.tec ul button {
+  width: 100px;
+  height: 24px;
+  top: 780px;
+  left: 171px;
+  border-radius: 30px;
+  background-color: #CB92B1;
+  color: #000000;
+
+}
+
+.tec ul button:hover {
+  background-color: #000000;
+  color: #CB92B1;
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.5;
+}
+
+.experince {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 348px;
+  height: 208px;
+  left: 40px;
+  top: 880px;
+
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: var(--text-color);
+
+}
+
+.experince ul,
+.education ul {
+  margin-left: 3rem;
+  margin-bottom: -2rem;
+}
+
+.experince li,
+.education li {
+  margin-bottom: 0.5rem;
+
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  width: 348px;
+  height: 208px;
+  left: 40px;
+  top: 1100px;
+
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  color: var(--text-color);
+}
+
+footer {
+  display: flex;
+  justify-content: bottom;
+  align-items: center;
+  flex-direction: column;
+  z-index: 1;
+}
