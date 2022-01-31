@@ -18,8 +18,13 @@ body {
 
 .main-thing {
   display: flex;
+  position: absolute;
   flex-direction: row;
-  justify-self: space-around;
+  justify-self: center;
+  align-items: center;
+  margin-left: 10rem;
+  margin-right: 10rem;
+  padding-bottom: 50rem;
 }
 
 
@@ -42,52 +47,119 @@ body {
   position: absolute;
   left: 450px;
   top: 41px;
-  width: 952px;
+  width: 1200px;
   height: 292px;
   color: var(--text-color);
 
 }
 
-.my-projects {
+.my-projects, .recent-post-title {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #302f3d;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
   width: 1000px;
   height: 86px;
-  padding:1rem;
+  padding: 1rem;
+}
+
+.recent-post-title {
+  align-items: left;
+  justify-content: left;
+  margin-top: 2rem;
+}
+
+.recent-post-title h2 {
+  padding: 2.7rem;
+}
+
+.my-projects-2 {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
 }
 
 .my-projects h2 {
   margin-right: 35rem;
 }
 
-span {
+span a {
   text-decoration: none;
   color: var(--text-color);
   list-style: none;
 }
 
-.project-post{
-  margin-top:1rem;
-  padding:2rem;
+
+.project-post {
+  margin-top: 1rem;
+  padding: 2rem;
   background: #302f3d;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
-  width: 450px;
+  width: 490px;
   height: 186px;
 }
 
-.project-post img{
+.project-post img {
   padding-right: 1rem;
 }
 
+.my-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1rem;
+}
+
+.my-title-2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 1rem;
+}
+
+.my-title-3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+}
+
+.my-title-3 div {
+  display: flex;
+  align-items: center;
+  padding-left: 0.8rem;
+}
+
+.my-title-3 img {
+  display: flex;
+  align-items: center;
+}
+
+.my-dot {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 8rem;
+  gap: 0.5rem;
+}
+
 .dot {
-  background-color: yellow;
-  width: 1rem;
+  display: flex;
+  width: 15px;
+  height: 15px;
+  left: 787px;
+  top: 100px;
+
+  background: #E7DE79;
+  border: 2px solid #837E9F;
+  box-sizing: border-box;
   border-radius: 50%;
 }
 
@@ -128,11 +200,74 @@ span {
   padding: 0.2rem;
 }
 
-#image-profile :hover {
-  cursor: pointer;
-  border: 3px double #00ff00;
-  margin: 1rem;
+.thed:hover {
+  border: double 1px #00ff00;
+  box-shadow: 0 0 0.5em  5px #c5f0c5;
+  padding-bottom: 5rem;
 }
+
+#image-profile-2 {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  box-sizing: border-box;
+  padding: 0.2rem;
+}
+
+.recent-post-detail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+
+  background: #302f3d;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+
+  width: 1000px;
+  height: 200px;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+.recent-post-detail-2 {
+  margin-left: 10rem;
+  padding-top: 2rem;
+}
+
+.recent-post-detail-2 h3 {
+  padding-bottom: 1rem;
+}
+
+.recent-post-detail-2 h4 {
+  font-family: Merriweather Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 10px
+}
+
+.recent-post-detail-2 span {
+  font-family: Merriweather Sans;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.recent-post-detail-2 ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: var(--text-color);
+  list-style: none;
+}
+
+
 
 #whatsapp {
   width: 1.5rem;
@@ -277,6 +412,7 @@ span {
   left: 40px;
   top: 1100px;
 
+
   background: #302f3d;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 20px;
@@ -285,8 +421,12 @@ span {
 
 footer {
   display: flex;
-  justify-content: bottom;
   align-items: center;
-  flex-direction: column;
-  z-index: 1;
+  justify-content: center;
+  position: absolute;
+  width: 400px;
+  height: 19px;
+  left: 817px;
+  top: 1328px;
+  color: var(--text-color);
 }
